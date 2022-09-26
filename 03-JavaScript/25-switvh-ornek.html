@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="veri" placeholder="Kacıncı günü istiyorsun" />
+    <button onclick="goster()" id="gunGoster">Göster</button>
+    <div id="hadi"></div>
+
+    <script>
+      
+      function goster() {
+
+        let gun = document.querySelector("#veri").value;
+             gun = Number(gun);
+      let hangiGun;
+
+
+
+        switch (gun) {
+          case  1:
+            hangiGun = "Pazartesi";
+            break;
+
+          case 2:
+            hangiGun = "salı";
+            break;
+
+          case 3:
+            hangiGun = "çarsamba";
+            break;
+
+          case 4:
+            hangiGun = "persembe";
+            break;
+
+          case 5:
+            hangiGun = "cuma";
+            break;
+
+          case 6:
+            hangiGun = "cumartesi";
+            break;
+            case 7:
+            hangiGun = "Pazar";
+            break;
+
+
+          default:
+            hangiGun = "mal mısın bir haftada kaç gün var öğren gel";
+            break;
+        }
+        document.querySelector("#hadi").innerHTML = hangiGun;
+      }
+    </script>
+  </body>
+</html>

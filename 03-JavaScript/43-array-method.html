@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+        let sonuc ="";
+
+        const sayilar= [23,65,105,41,67,78,12];
+
+        //1- push methodu: dizinin sonuna bir veya daha fazla eleman ekler ve eleman sayısını donduru
+
+        sayilar.push(33,45) ; 
+        sonuc = sayilar.push(45);
+        console.log(sayilar); //(10) [23, 65, 105, 41, 67, 78, 12, 33, 45,45]
+        console.log(sonuc);// 10 => eleman sayısını verdi
+
+
+        //2- pop : bu method dizinin son elemanını siler , bize sildiği elemanı döndürür.
+
+        sayilar.pop();
+        sonuc = sayilar.pop() ;
+        console.log(sonuc); // 45
+        console.log(sayilar);(8) // [23, 65, 105, 41, 67, 78, 12, 33] iki defa çalıştığı için son iki rakamı sildi. en son sildiği rakamı yazdırdı.
+
+
+        // 3- shft : dizinin ilk elemanını siler , bize sildiği elemanı dondurur.
+        sonuc = sayilar.shift();
+        console.log(sayilar);
+
+             // 4- shft : dizinin ilk indexine yeni bir eleman ekler , bize yeni length i dondurur.
+
+            sonuc = sayilar.unshift(34);
+            console.log(sayilar);
+            console.log(sonuc);//8
+
+            //5- sort diziyi alfabetik sırada sıralar. aritmetik olarak sıralamadığı için ham olarak bu method rakamlarda kullanılamaz.
+
+            sayilar.sort(function(a,b){
+                return a-b; //b-a yazarsak büyükten küçüğe sıralar. bu fonksiyona call back fonksiyon denir.
+
+            });
+            console.log(sayilar);
+
+            //6- reverse : dizinin elemanını tersten sıralar
+
+            sayilar.reverse();
+            console.log(sayilar);
+
+            //7- splice : dizinin içeriklerini yeni öğeler ekleyerek , mevcut öğeleri silerek günceller.
+            // a- belirtilen indexten itibaren siler
+            
+            sayilar.splice(6);
+            console.log(sayilar);
+
+            // b- belirtilen indexten itibaren belirtilen sayı kadar siler.
+
+            sayilar.splice(3,1);
+            console.log(sayilar);
+
+            //c- belirtilen indexten itibaren siler ve eklemeler yapar
+
+            sayilar.splice(1,1,28,96);//1. indexi siler yerine sonra 28 ve 96. sayılarını ekler.
+            console.log(sayilar);
+
+            // d- belirtilen indexten itibaren silmeden ekleme yapar.
+            sayilar.splice(4,0,99,101); //4. indexe gelir 4. indexi sağa öteler yerine 99 ve 101 sayılarını ekler.
+            
+            //ekstra : includes , ozellikle iflerde kullanılır. 
+
+            sonuc = sayilar.includes(55);
+            console.log(sonuc); // içinde var mı bakar true ya da false return eder.
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

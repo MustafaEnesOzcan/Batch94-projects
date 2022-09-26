@@ -1,0 +1,19 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav.menu{
+    text-align: center;
+    background-color:grey;
+    width: 125px;
+    
+}
+.active{
+    background-color: black;
+    
+}
+.link{
+    color: white;
+}
+a{
+    text-decoration:none ;
+}

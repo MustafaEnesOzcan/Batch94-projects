@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode çalışması</title>
+    <style>
+      .darkMode {
+        background-color: black;
+        color: rgb(223, 202, 93);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Dark Mode" id="btnMod" onclick="modDegis()" />
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+      expedita dolor cupiditate impedit commodi possimus nostrum accusantium
+      ducimus non alias? Architecto facere doloribus reiciendis impedit
+      reprehenderit cum error quas hic? Itaque nostrum aliquid tenetur facere
+      porro dicta, praesentium eveniet quaerat soluta dolore placeat amet
+      mollitia libero tempore cum minus tempora totam illo eligendi earum
+      ratione accusantium cupiditate. Cumque, corrupti animi! Laudantium
+      aliquam, eaque ut beatae neque eos ipsum delectus dolore totam natus
+      asperiores aliquid dolor tempora esse veniam cum vel quaerat recusandae
+      eum, facilis earum culpa veritatis itaque. Fuga, autem? Pariatur rem
+      blanditiis autem temporibus est voluptate nesciunt tempore quia vero, et
+      aperiam dolor, expedita, doloremque itaque. Rerum accusamus distinctio
+      dolores aliquam possimus pariatur obcaecati incidunt modi, consequuntur
+      quidem at? Animi temporibus sequi sunt laudantium quidem cum doloremque
+      excepturi quia. Ex dolores, aperiam obcaecati, hic amet veritatis ratione
+      commodi corrupti minus debitis blanditiis non quod esse, ut perspiciatis
+      quam sunt.
+    </p>
+
+
+    <script>
+        let mod = "light"; //default olanı mod degişkenine attım
+        function modDegis(){
+            if (mod == "light") {
+                document.querySelector("body").classList.add("darkMode");//body'nin class ismi ekleyerek style aktif oldu
+                document.querySelector("#btnMod").value="Light Mode";//düğmedeki yazı değişti
+                mod="dark";
+                
+            } else {
+                document.querySelector("body").classList.remove("darkMode");
+                document.querySelector("#btnMod").value="Dark Mode";
+                mod="light";
+                
+            }
+        }
+
+    </script>
+  </body>
+</html>

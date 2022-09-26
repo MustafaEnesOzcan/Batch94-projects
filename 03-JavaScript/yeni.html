@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Topla" onclick="topla()">
+    <script>
+        function topla(){
+            const dizi1 = [12,56,14,67,89,33,22];
+            const dizi2 = [54,16,41,78,18,35,28];
+            let dizi3 = [];
+            
+            for(let i=0; i<dizi1.length; i++){
+                
+                let toplam = dizi1[i] + dizi2[i];
+                dizi3.push(toplam);
+            }
+            console.log(dizi3);
+           
+        }
+        
+    </script>
+    
+</body>
+</html>

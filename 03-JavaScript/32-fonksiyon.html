@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function yasHesaplaBir(){
+            console.log(`benim yasım ${2022-1991}`);
+        }
+        yasHesaplaBir();
+
+
+        function yasHesaplaIki(dogumTarihi){
+            console.log(`benim yasım ${2022-dogumTarihi}`)
+            
+        }
+        yasHesaplaIki(1938);
+
+        function yasHesapla3(dogumTarihi){
+
+            let yas = 2022-dogumTarihi;
+            return yas;
+
+        }
+        let yas = yasHesapla3(2005);
+
+        function yasHesapla4(dogumTarihi){
+
+          let tarih =  new Date();
+          let year = tarih.getFullYear();
+          let yas = year-dogumTarihi;
+          return yas;
+
+        }
+
+        let yas2 = yasHesapla4(2005);
+        alert(`yas : ${yas2}`);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        let kurslar =['javascript' , 'salesforce' , 'data science' , 'pyhton'];
+        console.log(kurslar); 
+        console.log(kurslar[1]); //salesforce sonucunu verir.
+        console.log(kurslar[kurslar.length-1]); // son elemanı verir
+        console.log(kurslar.length); //4 verir 
+
+
+        const kurslar2 = ['javascript' , 'salesforce' , 'data science' , 'pyhton'];
+        kurslar2[0] = "react";
+        console.log(kurslar2);// const'un değiştirmeme koşulu primitive lerde geçerlidir , array non-primitive dir
+        kurslar2 = ["ali" ,"veli"];
+        console.log(kurslar2);// hata verir. array const ile tanımlanmışsa , array komple değiştirilemez.
+        //array let ile tanımlanmış olsaydı , arrayın içine ali ve veli yüklenirdi.
+
+    </script>
+    
+</body>
+</html>

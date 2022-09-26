@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+         <table>
+            <tr>
+                <td><Label for="eposta">Eposta</Label></td>
+                <td> <input type="email" name="eposta" id="eposta"> </td>
+            </tr>
+            <tr>
+                <td> <label for="sifre">şifre</label> </td>
+                <td> <input type="password" name="sifre" id="sifre"> </td>
+            </tr>
+            <tr>
+                <td> <label for="kod">Guvenlik kodu</label> </td>
+                <td> <input type="text" name="kod" id="kod" value="abcd" readonly> </td>
+                <!-- value ekleyecek text kısmını doldurduk , readonly ile değiştirilemez yaptık -->
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" value="Kaydet" disabled> <input type="reset" value="Temizle"> </td>
+            </tr>
+         </table>
+    </form>
+</body>
+</html>

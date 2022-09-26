@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="sayi1" placeholder="ilk sayıyı giriniz">
+    <input type="text"  id="sayi2" placeholder="kinci sayıyı giriniz">
+    <button onclick="hesapla()" id="hesap">HESAPLA</button>                         
+    <h1 id="baslik"></h1>
+
+
+    <script>
+
+        function hesapla(){
+           let sayi1 = document.querySelector("#sayi1").value;
+           let sayi2 = document.querySelector("#sayi2").value;
+           let toplam = 0;
+           let temp;
+
+           if(sayi2<sayi1){
+            temp = sayi1;
+            sayi1 =sayi2;
+            sayi2 = temp;
+           }
+           if(sayi1==0 || sayi2==0){
+            alert("geçerli bir sayı giriniz");
+            return;
+           }
+           
+           sayi1 = Number(sayi1);
+           sayi2 = Number(sayi2);
+
+           for(let i = sayi1 ; i<= sayi2 ; i++){
+
+            if(i%7==0){
+                toplam++;
+                
+
+            }
+
+           }
+           document.querySelector("#baslik").innerHTML = `7ye bölünen ${toplam} sayı vardır.`
+
+
+
+
+        }
+
+    </script>
+</body>
+</html>

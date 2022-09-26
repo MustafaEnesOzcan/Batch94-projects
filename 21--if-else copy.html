@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="fiyat" placeholder="Fiyatı giriniz">
+    <button onclick="indirim()" id="btnHesapla">Hesapla</button>
+    <div id="sonuc"></div>
+
+
+
+
+
+
+
+
+    <script>
+
+        function indirim(){
+            let fiyatVal =document.querySelector("#fiyat").value;
+
+            if(Number(fiyatVal)>500){
+               fiyatVal = fiyatVal*90/100;
+                
+
+            }else{
+                fiyatVal = fiyatVal*95/100;
+
+            }
+            document.querySelector("#sonuc").innerHTML = fiyatVal;
+        }
+
+
+    </script>
+</body>
+</html>
